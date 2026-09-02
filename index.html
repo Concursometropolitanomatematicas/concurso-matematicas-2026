@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Consulta de salón - Concurso Metropolitano de Matemáticas</title>
+<title>CONCURSO METROPOLITANO DE MATEMÁTICAS “MAYRA LUZ GÓMEZ BETRÁN”</title>
 <style>
 :root {
   --bg:#f4f7fb;--card:#fff;--primary:#17365d;--primary2:#1f4e78;
@@ -13,7 +13,7 @@
 body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
 .wrap{width:min(760px,calc(100% - 28px));margin:42px auto}
 .hero{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border-radius:22px 22px 0 0;padding:28px 24px;text-align:center}
-.hero h1{margin:0 0 8px;font-size:clamp(1.45rem,4vw,2rem)} .hero p{margin:0;opacity:.93}
+.hero h1{margin:0 0 8px;font-size:clamp(1.45rem,4vw,2rem)} .hero p{margin:0;opacity:.93;font-size:.92rem;line-height:1.45}
 .card{background:var(--card);border:1px solid var(--border);border-top:0;border-radius:0 0 22px 22px;padding:24px;box-shadow:0 12px 32px rgba(23,54,93,.09)}
 label{display:block;font-weight:800;margin-bottom:8px}
 .searchrow{display:grid;grid-template-columns:1fr auto;gap:10px}
@@ -35,8 +35,8 @@ footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:16px}
 <body>
 <main class="wrap">
 <section class="hero">
-  <h1>Consulta de categoría y salón</h1>
-  <p>Concurso Metropolitano de Matemáticas</p>
+  <h1>CONSULTA DE SALÓN</h1>
+  <p>CONCURSO METROPOLITANO DE MATEMÁTICAS<br>“MAYRA LUZ GÓMEZ BETRÁN”</p>
 </section>
 <section class="card">
   <label for="q">Escribe tu nombre</label>
@@ -101,7 +101,7 @@ function buscar() {
         ${e.curso && !e.curso.toLowerCase().startsWith("ciclo")
           ? `<span class="badge">Curso: ${escapar(e.curso)}</span>` : ""}
         <span class="badge">Categoría ${escapar(e.categoria)}</span>
-        <span class="badge">Terna ${escapar(e.terna)}</span>
+        
         <span class="badge">Salón ${escapar(e.salon)}</span>
       </div>
       <div class="school">${escapar(e.colegio)}</div>
